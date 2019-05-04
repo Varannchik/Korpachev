@@ -29,7 +29,10 @@
     font-style: normal;
     src: url('../fonts/Intro.ttf') format('truetype');
 }
-
+body{
+    margin: 0;
+    padding: 0;
+}
 
 .container{
     max-width: 1110px;
@@ -65,15 +68,11 @@ header{
                     }
 
                 }
-                @media (max-width: 700px){
-                    display: none;
-                }
+               
             } 
             .mobile_menu{
                 display: none;
-                @media (max-width: 700px){
-                    display: block;
-                }
+                
 
             }  
         }
@@ -429,6 +428,21 @@ footer{
     }
     
 }
+@media (max-width: 700px){
+    header {
+        .main_menu {
+            .content_menu{
+                nav{
+                    display: none;
+                }
+                .mobile_menu{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 600px){
     .items_theme{
         grid-template-columns: 12fr;

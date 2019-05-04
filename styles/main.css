@@ -33,6 +33,11 @@
   src: url("../fonts/Intro.ttf") format("truetype");
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 1110px;
   margin: 0 auto;
@@ -84,20 +89,8 @@ header .main_menu .content_menu nav a svg {
   margin: 0 5px;
 }
 
-@media (max-width: 700px) {
-  header .main_menu .content_menu nav {
-    display: none;
-  }
-}
-
 header .main_menu .content_menu .mobile_menu {
   display: none;
-}
-
-@media (max-width: 700px) {
-  header .main_menu .content_menu .mobile_menu {
-    display: block;
-  }
 }
 
 .main_content {
@@ -495,6 +488,15 @@ footer .footer_content a {
   footer .footer_content {
     -ms-grid-columns: 6fr 6fr;
         grid-template-columns: 6fr 6fr;
+  }
+}
+
+@media (max-width: 700px) {
+  header .main_menu .content_menu nav {
+    display: none;
+  }
+  header .main_menu .content_menu .mobile_menu {
+    display: block;
   }
 }
 
