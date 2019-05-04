@@ -65,7 +65,17 @@ header{
                     }
 
                 }
-            }   
+                @media (max-width: 700px){
+                    display: none;
+                }
+            } 
+            .mobile_menu{
+                display: none;
+                @media (max-width: 700px){
+                    display: block;
+                }
+
+            }  
         }
         
     }
@@ -342,7 +352,10 @@ footer{
         display: grid;
         grid-template-columns: repeat(4, 3fr);
         ul{
-            list-style: none;
+            list-style: none;           
+            svg{
+                display:none;
+            }
             li{                
                 &:first-child{
                     position: relative;
@@ -371,6 +384,96 @@ footer{
             text-decoration: none;
             color: $white;
             font-family: 'Proxima Nova Semibold';            
+        }
+    }
+}
+
+@media (max-width: 900px){
+    header {
+        .main_menu {
+            .content_menu nav {
+                width: 66%;  
+            }
+        }
+    }
+}
+@media (max-width: 800px){
+    .main_content {
+        height: auto;
+        .main_info{
+            height: auto;
+            padding: 20px 0 70px;
+            &::after {
+                content: '';
+            }
+            .text {
+                width: 100%;
+                .range{
+                    width: 100%;
+                }
+                h1{
+                    font-size: 32px;
+                    line-height: 45px;
+                }
+                h2{
+                    font-size: 22px;
+                    line-height: 29px;
+                }
+            }
+        }
+    }
+    footer{
+       .footer_content{
+            grid-template-columns: 6fr 6fr;
+        }    
+    }
+    
+}
+@media (max-width: 600px){
+    .items_theme{
+        grid-template-columns: 12fr;
+        padding: 10px;
+        .number_theme{
+            font-size: 40px;
+            line-height: 49px;
+            justify-content: start;
+        }
+        .about_theme{
+           h4 {
+            font-size: 19px;
+            line-height: 23px;
+            letter-spacing: 0.02em;
+           }
+        } 
+    } 
+}
+@media (max-width: 480px){
+    .themes{
+        flex-direction: column;
+        align-items: flex-start;
+        .drop_list{
+            width: 100%;
+          select{
+            width: 100%;
+        }  
+        }
+        
+    }
+    .breadcrumb{
+        display: none;
+    }
+    
+    footer{
+        .footer_content{
+            grid-template-columns: 12fr;
+            ul{
+                &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                    display: none;
+                }
+                svg{
+                    display: inline-block;
+                }
+            }
         }
     }
 }
