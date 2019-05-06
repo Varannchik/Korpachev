@@ -297,31 +297,6 @@ header .main_menu .content_menu .mobile_menu {
   cursor: pointer;
 }
 
-.section_content form ol li .content_list input[type="checkbox"]:checked,
-.section_content form ol li .content_list input[type="checkbox"]:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
-
-.section_content form ol li .content_list input[type="checkbox"]:checked + label::before,
-.section_content form ol li .content_list input[type="checkbox"]:not(:checked) + label::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 25px;
-  height: 25px;
-  background-color: #0099DD;
-  border-radius: 3px;
-}
-
-.section_content form ol li .content_list input[type="checkbox"]:checked + label:before,
-.section_content form ol li .content_list input[type="checkbox"]:not(:checked) + label:before {
-  background-color: #0099DD;
-  border-radius: 3px;
-}
-
 .section_content form ol li .content_list label {
   padding: 23px 55px 27px 24px;
   cursor: pointer;

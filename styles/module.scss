@@ -248,34 +248,34 @@ header{
                     position: relative;
                     cursor: pointer;
                     
-                    input[type="checkbox"]:checked, 
-                    input[type="checkbox"]:not(:checked){
-                        position: absolute;
-                        left: -9999px;
-                    }
-                    input[type="checkbox"]:checked + label, 
-                    input[type="checkbox"]:not(:checked) + label
-                    {
-                        &::before{
-                            content: "";
-                            position: absolute;
-                            // margin: auto;
-                            right:0;
-                            top: 0;
-                            bottom: 0;
-                            width: 25px;
-                            height: 25px;                        
-                            background-color: $footer_colour;
-                            border-radius: 3px;
-                        }
+                    // input[type="checkbox"]:checked, 
+                    // input[type="checkbox"]:not(:checked){
+                    //     position: absolute;
+                    //     left: -9999px;
+                    // }
+                    // input[type="checkbox"]:checked + label, 
+                    // input[type="checkbox"]:not(:checked) + label
+                    // {
+                    //     &::before{
+                    //         content: "";
+                    //         position: absolute;
+                    //         // margin: auto;
+                    //         right:0;
+                    //         top: 0;
+                    //         bottom: 0;
+                    //         width: 25px;
+                    //         height: 25px;                        
+                    //         background-color: $footer_colour;
+                    //         border-radius: 3px;
+                    //     }
                         
-                    }
+                    // }
 
-                    input[type="checkbox"]:checked + label:before, 
-                    input[type="checkbox"]:not(:checked) + label:before {
-                        background-color: $footer_colour;
-                        border-radius: 3px;
-                    }
+                    // input[type="checkbox"]:checked + label:before, 
+                    // input[type="checkbox"]:not(:checked) + label:before {
+                    //     background-color: $footer_colour;
+                    //     border-radius: 3px;
+                    // }
                     
                     label{
                         padding: 23px 55px 27px 24px;
