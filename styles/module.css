@@ -264,15 +264,94 @@ header .main_menu .content_menu .mobile_menu {
   color: #323232;
 }
 
+.name_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .name_section h2 {
   font-family: 'Proxima Nova Bold';
   font-size: 32px;
   line-height: 39px;
   color: #222B3A;
+  position: relative;
+  padding-left: 30px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.name_section h2::before, .name_section h2::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border-width: 0 10px;
+  vertical-align: middle;
+  height: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-width: 0 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.name_section h2::before {
+  width: 22px;
+  left: 0;
+  border: 1px solid #222B3A;
+}
+
+.name_section h2::after {
+  width: 100%;
+  margin-left: 10px;
+  border: 1px solid #F1F1F1;
+}
+
+.name_section svg {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.section_content {
+  padding-bottom: 65px;
+}
+
+.section_content form ol {
+  counter-reset: myCounter;
+  padding: 0;
 }
 
 .section_content form ol li {
   border-bottom: 1.3px solid #F3F3F3;
+  list-style: none;
+  position: relative;
+}
+
+.section_content form ol li::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 24px;
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  font-family: 'Proxima Nova Bold';
+  color: #222B3A;
+  background: #F3F3F3;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
 }
 
 .section_content form ol li .content_list {
@@ -297,8 +376,28 @@ header .main_menu .content_menu .mobile_menu {
   cursor: pointer;
 }
 
+.section_content form ol li .content_list input[type="checkbox"]:checked,
+.section_content form ol li .content_list input[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.section_content form ol li .content_list input[type="checkbox"]:checked + label::before,
+.section_content form ol li .content_list input[type="checkbox"]:not(:checked) + label::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #0099DD;
+  border-radius: 3px;
+}
+
 .section_content form ol li .content_list label {
-  padding: 23px 55px 27px 24px;
+  padding: 23px 55px 27px 80px;
   cursor: pointer;
 }
 
