@@ -724,7 +724,7 @@ h4 {
 }
 
 .warning {
-  background: #FFA43F;
+  background: linear-gradient(89.14deg, #FF8A00 0.03%, #FC880D 99.97%), #FFA43F;
   color: #ffffff;
   font-family: 'Proxima Nova Bold';
   font-size: 18px;
@@ -750,6 +750,68 @@ h4 {
 
 .orange_block .block .text_block::before {
   background: #FFA43F;
+}
+
+.activity_block {
+  background: #FAFAFA;
+  border: 1px solid #EAEAEA;
+  -webkit-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
+          box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  font-family: 'Proxima Nova Bold';
+  font-size: 22px;
+  line-height: 75px;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.name_activity svg {
+  margin-right: 28px;
+}
+
+.question_block {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.question_block .new_question {
+  font-size: 16px;
+  line-height: 27px;
+  color: #0099DD;
+}
+
+.question_block .count {
+  font-size: 20px;
+  line-height: 34px;
+  margin: 0 34px;
+}
+
+.btn {
+  font-family: 'Proxima Nova Bold';
+  font-size: 14px;
+  line-height: 44px;
+  color: #FFA43F;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 258px;
+  border: 2px solid #FFA43F;
+  margin-right: 25px;
+}
+
+.btn:hover {
+  background: linear-gradient(89.73deg, #FF8A00 0.03%, #FC880D 99.97%);
+  color: #ffffff;
 }
 
 footer {
@@ -856,6 +918,21 @@ footer .footer_content a {
   }
   .item .icon {
     margin-right: 0;
+  }
+  .name_activity {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .question_block .count {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    border: 2px solid #FFA43F;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=module.css.map */
