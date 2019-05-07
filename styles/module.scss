@@ -268,6 +268,7 @@ header{
 }
 .section_content{
     padding-bottom: 65px;
+    overflow: hidden;
     form{
         ol{
             counter-reset: myCounter;
@@ -306,6 +307,7 @@ header{
                     color: $dark_blue;
                     position: relative;
                     cursor: pointer;
+                    overflow: hidden;
                     
                     input[type="checkbox"]:checked, 
                     input[type="checkbox"]:not(:checked){
@@ -750,6 +752,22 @@ footer{
     }
 }
 
+@media (max-width: 900px){
+    header {
+        .main_menu {
+            .content_menu nav {
+                width: 66%;  
+            }
+        }
+    }
+}
+@media (max-width: 800px){
+    footer{
+        .footer_content{
+             grid-template-columns: 6fr 6fr;
+         }    
+     }
+}
 @media (max-width: 700px){
     header {
         .main_menu {
@@ -843,8 +861,27 @@ footer{
         border: 2px solid $dark_orange;
         margin-right: 0;
         margin-bottom: 10px;
-        
+    } 
+}
+@media (max-width: 600px){
+
+}
+@media (max-width: 480px){
+    .breadcrumb{
+        display: none;
     }
     
-    
+    footer{
+        .footer_content{
+            grid-template-columns: 12fr;
+            ul{
+                &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                    display: none;
+                }
+                svg{
+                    display: inline-block;
+                }
+            }
+        }
+    } 
 }

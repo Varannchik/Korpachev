@@ -321,6 +321,7 @@ header .main_menu .content_menu .mobile_menu {
 
 .section_content {
   padding-bottom: 65px;
+  overflow: hidden;
 }
 
 .section_content form ol {
@@ -374,6 +375,7 @@ header .main_menu .content_menu .mobile_menu {
   color: #222B3A;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .section_content form ol li .content_list input[type="checkbox"]:checked,
@@ -863,6 +865,19 @@ footer .footer_content a {
   font-family: 'Proxima Nova Semibold';
 }
 
+@media (max-width: 900px) {
+  header .main_menu .content_menu nav {
+    width: 66%;
+  }
+}
+
+@media (max-width: 800px) {
+  footer .footer_content {
+    -ms-grid-columns: 6fr 6fr;
+        grid-template-columns: 6fr 6fr;
+  }
+}
+
 @media (max-width: 700px) {
   header .main_menu .content_menu nav {
     display: none;
@@ -933,6 +948,22 @@ footer .footer_content a {
     border: 2px solid #FFA43F;
     margin-right: 0;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb {
+    display: none;
+  }
+  footer .footer_content {
+    -ms-grid-columns: 12fr;
+        grid-template-columns: 12fr;
+  }
+  footer .footer_content ul:nth-child(1), footer .footer_content ul:nth-child(2), footer .footer_content ul:nth-child(3) {
+    display: none;
+  }
+  footer .footer_content ul svg {
+    display: inline-block;
   }
 }
 /*# sourceMappingURL=module.css.map */
