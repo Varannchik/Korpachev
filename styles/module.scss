@@ -536,7 +536,20 @@ header{
     grid-area: check;
 }
 
-
+.dop_ex{
+    .item{
+        border:none;
+        border-bottom: 1.5px solid $light_gray;
+        box-sizing: border-box;
+        box-shadow:none;
+        border-radius: 0; 
+    }
+    .number{
+        span{
+            border-radius: 3px;
+        }
+    }
+}
 
 
 footer{

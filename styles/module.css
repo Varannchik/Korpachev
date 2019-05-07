@@ -622,6 +622,20 @@ header .main_menu .content_menu .mobile_menu {
   grid-area: check;
 }
 
+.dop_ex .item {
+  border: none;
+  border-bottom: 1.5px solid #F3F3F3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+}
+
+.dop_ex .number span {
+  border-radius: 3px;
+}
+
 footer {
   background-color: #0099DD;
   border-bottom: 47px solid #222B3A;
