@@ -636,6 +636,122 @@ header .main_menu .content_menu .mobile_menu {
   border-radius: 3px;
 }
 
+h4 {
+  font-family: 'Proxima Nova Bold';
+  font-size: 24px;
+  line-height: 29px;
+  color: #027EB4;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 3px;
+  background: #ffffff;
+  font-family: 'Proxima Nova Semibold';
+  font-size: 16px;
+  line-height: 19px;
+  color: #323232;
+  padding: 25px 30px;
+  margin-bottom: 2px;
+  position: relative;
+}
+
+.block .text_block {
+  width: 80%;
+}
+
+.block .text_block::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #0099DD;
+  border-radius: 3px;
+}
+
+.block .text_block::after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  right: 35px;
+  top: -3px;
+  bottom: 0;
+  margin: auto;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.block input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+
+.block input[type="checkbox"]:not(:checked) + .text_block:after {
+  opacity: 0;
+}
+
+.block input[type="checkbox"]:not(:checked) + .text_block:before {
+  background: #FAFAFA;
+  border: 1px solid #DADADA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.block input[type="checkbox"]:checked + .text_block:after {
+  opacity: 1;
+}
+
+.warning {
+  background: #FFA43F;
+  color: #ffffff;
+  font-family: 'Proxima Nova Bold';
+  font-size: 18px;
+  line-height: 45px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+  border-radius: 3px;
+}
+
+.warning svg {
+  margin-right: 20px;
+}
+
+.orange_block h4 {
+  color: #FFA43F;
+}
+
+.orange_block .block .text_block::before {
+  background: #FFA43F;
+}
+
 footer {
   background-color: #0099DD;
   border-bottom: 47px solid #222B3A;
