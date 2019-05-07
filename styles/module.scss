@@ -226,6 +226,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    .rotate{
+        transform: rotate(0deg);
+    }
+    .un_rotate{
+        transform: rotate(180deg);
+    }
     h2{
         font-family: 'Proxima Nova Bold';
         font-size: 32px;
@@ -264,6 +271,7 @@ header{
     svg{
         margin-left: 10px;
         cursor: pointer;
+        
     }
 }
 .section_content{

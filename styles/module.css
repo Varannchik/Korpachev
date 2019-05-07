@@ -274,6 +274,17 @@ header .main_menu .content_menu .mobile_menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
+}
+
+.name_section .rotate {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.name_section .un_rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .name_section h2 {
