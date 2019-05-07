@@ -283,11 +283,12 @@ header{
         }
     }
     select{
-        border: 2px solid $orange;
+        border: 1px solid $orange;
         border-radius: 3px;
         color: $orange;
         background: transparent;
-        padding:10px 20px 10px 10px;
+        padding: 10px 35px 10px 10px;
+        font-family: 'Proxima Nova Bold';
         outline: none;
         cursor: pointer;
         
@@ -303,7 +304,7 @@ header{
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
     border-radius: 3px;
     display: grid;
-    grid-template-columns: 2fr 9fr 1fr;
+    grid-template-columns: 2fr 10fr 1fr;
     margin: 23px 23px 0 23px;
     padding-top: 20px;
     .number_theme{
@@ -336,12 +337,17 @@ header{
             line-height: 19px;            
             font-family: 'Proxima Nova Bold';
             color: $gray;
+            margin: 8px 0;
+        }
+        p{
+            margin: 10px 0;
         }
         .date{
             font-size: 16px;
             line-height: 27px;            
             font-family: 'Proxima Nova Bold';
             color: $dark_gray;
+            margin: -2px 0 10px 0;
             span{
                 color: $orange;
             }
@@ -360,7 +366,7 @@ header{
         line-height: 17px;
         color: $black;
         display: block;
-        padding-bottom:65px;
+        padding-bottom:55px;
     }
     .status_bar{
         position: relative;
@@ -389,7 +395,7 @@ header{
 footer{
     background-color: $footer_colour;
     border-bottom: 47px solid $dark_blue;
-    padding: 25px 0 37px 0;
+    padding: 22px 0 33px 0;
     .footer_content{
         display: grid;
         grid-template-columns: repeat(4, 3fr);
@@ -401,7 +407,7 @@ footer{
             li{                
                 &:first-child{
                     position: relative;
-                    margin-bottom: 40px;
+                    margin-bottom: 39px;
                     a{
                         font-family: 'Proxima Nova Bold';
                         font-size: 24px;                                               
@@ -422,7 +428,7 @@ footer{
         }
         a{
             font-size: 16px;
-            line-height: 30px;
+            line-height: 28px;
             text-decoration: none;
             color: $white;
             font-family: 'Proxima Nova Semibold';            

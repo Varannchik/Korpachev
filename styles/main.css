@@ -330,11 +330,12 @@ header .main_menu .content_menu .mobile_menu {
 }
 
 .themes select {
-  border: 2px solid #FC890D;
+  border: 1px solid #FC890D;
   border-radius: 3px;
   color: #FC890D;
   background: transparent;
-  padding: 10px 20px 10px 10px;
+  padding: 10px 35px 10px 10px;
+  font-family: 'Proxima Nova Bold';
   outline: none;
   cursor: pointer;
 }
@@ -353,8 +354,8 @@ header .main_menu .content_menu .mobile_menu {
   border-radius: 3px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 9fr 1fr;
-      grid-template-columns: 2fr 9fr 1fr;
+  -ms-grid-columns: 2fr 10fr 1fr;
+      grid-template-columns: 2fr 10fr 1fr;
   margin: 23px 23px 0 23px;
   padding-top: 20px;
 }
@@ -397,6 +398,11 @@ header .main_menu .content_menu .mobile_menu {
   line-height: 19px;
   font-family: 'Proxima Nova Bold';
   color: #979FAD;
+  margin: 8px 0;
+}
+
+.items_theme .about_theme p {
+  margin: 10px 0;
 }
 
 .items_theme .about_theme .date {
@@ -404,6 +410,7 @@ header .main_menu .content_menu .mobile_menu {
   line-height: 27px;
   font-family: 'Proxima Nova Bold';
   color: #696969;
+  margin: -2px 0 10px 0;
 }
 
 .items_theme .about_theme .date span {
@@ -432,7 +439,7 @@ header .main_menu .content_menu .mobile_menu {
   line-height: 17px;
   color: #323232;
   display: block;
-  padding-bottom: 65px;
+  padding-bottom: 55px;
 }
 
 .status .status_bar {
@@ -467,7 +474,7 @@ header .main_menu .content_menu .mobile_menu {
 footer {
   background-color: #0099DD;
   border-bottom: 47px solid #222B3A;
-  padding: 25px 0 37px 0;
+  padding: 22px 0 33px 0;
 }
 
 footer .footer_content {
@@ -487,7 +494,7 @@ footer .footer_content ul svg {
 
 footer .footer_content ul li:first-child {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 footer .footer_content ul li:first-child a {
@@ -507,7 +514,7 @@ footer .footer_content ul li:first-child::after {
 
 footer .footer_content a {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 28px;
   text-decoration: none;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold';
