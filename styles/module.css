@@ -332,7 +332,6 @@ header .main_menu .content_menu .mobile_menu {
 
 .section_content {
   padding-bottom: 65px;
-  overflow: hidden;
 }
 
 .section_content form ol {
@@ -785,10 +784,37 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.activity_block .rotate {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.activity_block .un_rotate {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .name_activity svg {
   margin-right: 28px;
+}
+
+.content_activity {
+  display: none;
+  background: #ffffff;
+  border: 1px solid #F3F3F3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
+          box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
+  padding: 34px 32px 18px 41px;
+  font-size: 16px;
+  line-height: 27px;
+  color: #696969;
+  font-family: 'Proxima Nova Semibold';
+  margin-top: -20px;
 }
 
 .question_block {
@@ -874,6 +900,12 @@ footer .footer_content a {
   text-decoration: none;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold';
+}
+
+@media (max-width: 1100px) {
+  .section_content {
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 900px) {

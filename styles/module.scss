@@ -276,7 +276,7 @@ header{
 }
 .section_content{
     padding-bottom: 65px;
-    overflow: hidden;
+    
     form{
         ol{
             counter-reset: myCounter;
@@ -677,11 +677,31 @@ h4{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px; 
+    cursor: pointer;
+    .rotate{
+        transform: rotate(0deg);
+    }
+    .un_rotate{
+        transform: rotate(90deg);
+    }
 }
 .name_activity{
     svg{
         margin-right: 28px;
     }
+}
+.content_activity{
+    display: none;
+    background: $white;
+    border: 1px solid $light_gray;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
+    padding: 34px 32px 18px 41px;
+    font-size: 16px;
+    line-height: 27px;
+    color: $dark_gray;
+    font-family: 'Proxima Nova Semibold';
+    margin-top: -20px;
 }
 .question_block{
     box-shadow:none;
@@ -759,7 +779,11 @@ footer{
         }
     }
 }
-
+@media (max-width: 1100px){
+    .section_content {       
+        overflow: hidden;
+   }
+}
 @media (max-width: 900px){
     header {
         .main_menu {
@@ -768,6 +792,7 @@ footer{
             }
         }
     }
+    
 }
 @media (max-width: 800px){
     footer{
