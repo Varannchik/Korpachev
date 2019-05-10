@@ -423,6 +423,11 @@ footer{
 
                     }
                 }
+                &:hover{
+                    a{
+                        color: $black;
+                    }
+                }
             }
             
         }

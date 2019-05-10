@@ -512,6 +512,10 @@ footer .footer_content ul li:first-child::after {
   background: #ffffff;
 }
 
+footer .footer_content ul li:hover a {
+  color: #222B3A;
+}
+
 footer .footer_content a {
   font-size: 16px;
   line-height: 28px;
