@@ -494,14 +494,20 @@ footer{
 
 @media (max-width: 600px){
     .items_theme{
+        margin: 23px 0px 0 0px;
         grid-template-columns: 12fr;
         padding: 10px;
+        grid-template-areas: 'a b b' 'c c c';
         .number_theme{
             font-size: 40px;
             line-height: 49px;
             justify-content: start;
+            grid-area: a;
         }
         .about_theme{
+            grid-area: c;
+            font-size: 14px;
+            line-height: 24px;
            h4 {
             font-size: 19px;
             line-height: 23px;
@@ -509,6 +515,16 @@ footer{
            }
         } 
     } 
+    .status{
+        flex-direction: row-reverse;
+        span{
+            padding-bottom: 0px;
+            padding-left: 10px;
+        }
+        .status_bar{
+            transform: rotate(-0deg);
+        }
+    }
 }
 @media (max-width: 480px){
     .themes{

@@ -281,7 +281,7 @@ header .main_menu .content_menu .mobile_menu {
 }
 
 .breadcrumb li:hover a {
-  color: #323232;
+  color: #222B3A;
 }
 
 .breadcrumb .active {
@@ -289,7 +289,7 @@ header .main_menu .content_menu .mobile_menu {
   line-height: 19px;
   font-family: 'Proxima Nova Bold';
   text-decoration: none;
-  color: #323232;
+  color: #222B3A;
 }
 
 .bg_themes {
@@ -437,7 +437,7 @@ header .main_menu .content_menu .mobile_menu {
   font-family: 'Proxima Nova Bold';
   font-size: 14px;
   line-height: 17px;
-  color: #323232;
+  color: #222B3A;
   display: block;
   padding-bottom: 55px;
 }
@@ -568,9 +568,11 @@ footer .footer_content a {
 
 @media (max-width: 600px) {
   .items_theme {
+    margin: 23px 0px 0 0px;
     -ms-grid-columns: 12fr;
         grid-template-columns: 12fr;
     padding: 10px;
+        grid-template-areas: 'a b b' 'c c c';
   }
   .items_theme .number_theme {
     font-size: 40px;
@@ -578,11 +580,36 @@ footer .footer_content a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+  }
+  .items_theme .about_theme {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: c;
+    font-size: 14px;
+    line-height: 24px;
   }
   .items_theme .about_theme h4 {
     font-size: 19px;
     line-height: 23px;
     letter-spacing: 0.02em;
+  }
+  .status {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .status span {
+    padding-bottom: 0px;
+    padding-left: 10px;
+  }
+  .status .status_bar {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
