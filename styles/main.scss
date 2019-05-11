@@ -72,9 +72,13 @@ header{
             } 
             .mobile_menu{
                 display: none;
-                
-
-            }  
+                cursor: pointer; 
+            } 
+            .logo{
+                img{
+                    display: block;
+                }
+            } 
         }
         
     }
@@ -117,7 +121,12 @@ header{
                 padding: 0 37px;
                 line-height: 40px;
                 text-align: center;
+                border-radius: 3px;
                 cursor: pointer;
+                &:hover{
+                    color: $orange;
+                    border: 2px solid $orange;   
+                }
             }
             .range{
                 background: $light_gray;
@@ -287,7 +296,7 @@ header{
         border-radius: 3px;
         color: $orange;
         background: transparent;
-        padding: 10px 35px 10px 10px;
+        padding: 10px 35px 10px 5px;
         font-family: 'Proxima Nova Bold';
         outline: none;
         cursor: pointer;
@@ -305,8 +314,9 @@ header{
     border-radius: 3px;
     display: grid;
     grid-template-columns: 2fr 10fr 1fr;
-    margin: 23px 23px 0 23px;
+    margin: 23px 0 0 0;
     padding-top: 20px;
+    cursor: pointer;
     .number_theme{
         font-size: 64px;
         line-height: 60px;
@@ -462,7 +472,7 @@ footer{
             .text {
                 width: 100%;
                 .range{
-                    width: 100%;
+                    width: 80%;
                 }
                 h1{
                     font-size: 32px;
@@ -545,6 +555,16 @@ footer{
     }
     .breadcrumb{
         display: none;
+    }
+    .main_content {        
+        .main_info{
+            .text {
+                .range{
+                    width: 100%;
+                    
+                }                             
+            }
+        }
     }
     
     footer{

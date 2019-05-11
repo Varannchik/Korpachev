@@ -91,12 +91,17 @@ header .main_menu .content_menu nav a svg {
 
 header .main_menu .content_menu .mobile_menu {
   display: none;
+  cursor: pointer;
+}
+
+header .main_menu .content_menu .logo img {
+  display: block;
 }
 
 .main_content {
   position: relative;
-  height: 80vh;
-  overflow: hidden;
+  min-height: 80vh;
+  padding-top: 112px;
   background: #56c3e0 url(../image/module_bg.jpg) no-repeat;
   background-size: cover;
 }
@@ -104,7 +109,6 @@ header .main_menu .content_menu .mobile_menu {
 .main_content .name_main_content {
   background: #222B3A;
   width: 50%;
-  margin-top: 112px;
   padding: 19px 0;
 }
 
@@ -1056,9 +1060,6 @@ footer .footer_content a {
     -ms-grid-columns: 6fr 6fr;
         grid-template-columns: 6fr 6fr;
   }
-  .main_content .main_info .text .range {
-    width: 100%;
-  }
 }
 
 @media (max-width: 700px) {
@@ -1069,7 +1070,7 @@ footer .footer_content a {
     display: block;
   }
   .main_content {
-    margin-top: 30px;
+    padding-top: 20px;
   }
   .main_content .text {
     width: 100%;
@@ -1235,9 +1236,21 @@ footer .footer_content a {
   .some_question .btn {
     display: none;
   }
+  .info {
+    padding: 40px 0 10px 0;
+  }
 }
 
 @media (max-width: 480px) {
+  .main_content .main_info .text .range {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 60px;
+  }
+  .main_content .main_info .text h3 {
+    font-size: 21px;
+    line-height: 39px;
+  }
   .breadcrumb {
     display: none;
   }
