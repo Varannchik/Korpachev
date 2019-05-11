@@ -85,14 +85,15 @@ header{
 }
 .main_content{
     position: relative;
-    min-height: 80vh;
-    padding-top: 112px;  
+    height: 80vh;
+    overflow: hidden;     
     background: $main_blue_bg url(../image/module_bg.jpg) no-repeat;
     background-size: cover;
     .name_main_content{
         background: $dark_blue;
         width: 50%;        
-        padding: 19px 0;       
+        padding: 19px 0;
+        margin-top: 100px;              
         h1{
             font-family: 'Intro'; 
             color: $white;
@@ -101,6 +102,7 @@ header{
             margin: 0;
             text-align: right;
             padding-right: 15%;
+            
         }
     }
     .text{
@@ -1113,18 +1115,14 @@ footer{
     } 
 }
 @media (max-width: 600px){
-
-    .some_question{
-        
+    .some_question{        
         .btn{
             display: none;
-    
         }
     }
     .info{
         padding: 40px 0 10px 0;
-    }
-   
+    }   
 }
 @media (max-width: 480px){
     .main_content {        
