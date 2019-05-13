@@ -100,7 +100,7 @@ header .main_menu .content_menu .logo img {
 
 .main_content {
   position: relative;
-  height: 80vh;
+  height: 513px;
   overflow: hidden;
   background: #56c3e0 url(../image/module_bg.jpg) no-repeat;
   background-size: cover;
@@ -161,7 +161,7 @@ header .main_menu .content_menu .logo img {
   height: 15px;
   position: relative;
   margin-top: 41px;
-  margin-bottom: 114px;
+  margin-bottom: 80px;
 }
 
 .main_content .range .content_range {
@@ -486,7 +486,7 @@ header .main_menu .content_menu .logo img {
 }
 
 .item:hover .check::after {
-  right: -25px;
+  right: -24px;
 }
 
 .checkbox input[type="checkbox"] {
@@ -525,7 +525,7 @@ header .main_menu .content_menu .logo img {
   margin: auto;
   left: 0;
   top: -1px;
-  right: 26px;
+  right: 24px;
   width: 22px;
   height: 22px;
   border-radius: 10px;
@@ -656,13 +656,21 @@ header .main_menu .content_menu .logo img {
 }
 
 .dop_ex .item {
-  border: none;
+  border: 1.5px solid transparent;
   border-bottom: 1.5px solid #F3F3F3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0;
+}
+
+.dop_ex .item:hover {
+  border: 1.5px solid #FFA43F;
+}
+
+.dop_ex .item:hover .number span {
+  border-radius: 0 0 3px 0;
 }
 
 .dop_ex .number span {
@@ -992,6 +1000,7 @@ footer .footer_content {
 
 footer .footer_content ul {
   list-style: none;
+  cursor: pointer;
 }
 
 footer .footer_content ul svg {
@@ -1001,6 +1010,11 @@ footer .footer_content ul svg {
 footer .footer_content ul li:first-child {
   position: relative;
   margin-bottom: 40px;
+}
+
+footer .footer_content ul li:first-child:hover a {
+  padding-left: 0;
+  cursor: default;
 }
 
 footer .footer_content ul li:first-child a {
@@ -1020,10 +1034,11 @@ footer .footer_content ul li:first-child::after {
   left: 0;
   bottom: -20px;
   background: #ffffff;
+  cursor: default;
 }
 
 footer .footer_content ul li:hover a {
-  color: #222B3A;
+  padding-left: 5px;
 }
 
 footer .footer_content a {
@@ -1032,6 +1047,8 @@ footer .footer_content a {
   text-decoration: none;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold';
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 @media (max-width: 1100px) {

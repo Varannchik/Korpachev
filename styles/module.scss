@@ -85,7 +85,7 @@ header{
 }
 .main_content{
     position: relative;
-    height: 80vh;
+    height: 513px;
     overflow: hidden;     
     background: $main_blue_bg url(../image/module_bg.jpg) no-repeat;
     background-size: cover;
@@ -101,8 +101,7 @@ header{
             line-height: 44px;
             margin: 0;
             text-align: right;
-            padding-right: 15%;
-            
+            padding-right: 15%;            
         }
     }
     .text{
@@ -132,7 +131,7 @@ header{
         height: 15px;
         position: relative;
         margin-top: 41px;
-        margin-bottom: 114px;
+        margin-bottom: 80px;
         .content_range{
             position: absolute;
             top: 2px;
@@ -415,12 +414,11 @@ header{
         }
         
         .check{
-            &::before {                            
-                
+            &::before {
                 background: $gray_bg_button;
             }
             &::after {
-                right: -25px;
+                right: -24px;
             }
         }
             
@@ -459,7 +457,7 @@ header{
             margin: auto;            
             left: 0;
             top: -1px;
-            right: 26px;
+            right: 24px;
             width: 22px;
             height: 22px;
             border-radius: 10px;
@@ -565,11 +563,19 @@ header{
 
 .dop_ex{
     .item{
-        border:none;
+        border:1.5px solid transparent;
         border-bottom: 1.5px solid $light_gray;
         box-sizing: border-box;
         box-shadow:none;
         border-radius: 0; 
+        &:hover{
+            border:1.5px solid $dark_orange; 
+            .number{
+                span{
+                    border-radius: 0 0 3px 0;  
+                }
+            } 
+        }
     }
     .number{
         span{
@@ -842,17 +848,25 @@ footer{
         display: grid;
         grid-template-columns: repeat(4, 3fr);
         ul{
-            list-style: none;           
+            list-style: none; 
+            cursor: pointer;          
             svg{
                 display:none;
             }
-            li{                
+            li{                              
                 &:first-child{
                     position: relative;
                     margin-bottom: 40px;
+                    &:hover{
+                        a{
+                            padding-left: 0;
+                            cursor: default;
+                        }
+                    }
                     a{
                         font-family: 'Proxima Nova Bold';
                         font-size: 24px; 
+                       
                         &:hover{
                             color: $white;
                         }                                              
@@ -865,12 +879,13 @@ footer{
                         left: 0;
                         bottom: -20px;
                         background: $white;
+                        cursor: default;
 
                     }
                 }
                 &:hover{
                     a{
-                        color: $black;
+                        padding-left: 5px;
                     }
                 }
 
@@ -883,6 +898,7 @@ footer{
             text-decoration: none;
             color: $white;
             font-family: 'Proxima Nova Semibold'; 
+            transition: all .2s; 
 
         }
     }

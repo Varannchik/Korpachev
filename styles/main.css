@@ -100,7 +100,7 @@ header .main_menu .content_menu .logo img {
 
 .main_content {
   position: relative;
-  height: 80vh;
+  height: 513px;
   background: #296DCE;
   overflow: hidden;
 }
@@ -113,7 +113,7 @@ header .main_menu .content_menu .logo img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
+  height: 513px;
 }
 
 .main_content .main_info .text {
@@ -498,6 +498,7 @@ footer .footer_content {
 
 footer .footer_content ul {
   list-style: none;
+  cursor: pointer;
 }
 
 footer .footer_content ul svg {
@@ -507,6 +508,11 @@ footer .footer_content ul svg {
 footer .footer_content ul li:first-child {
   position: relative;
   margin-bottom: 39px;
+}
+
+footer .footer_content ul li:first-child:hover a {
+  padding-left: 0;
+  cursor: default;
 }
 
 footer .footer_content ul li:first-child a {
@@ -522,10 +528,11 @@ footer .footer_content ul li:first-child::after {
   left: 0;
   bottom: -20px;
   background: #ffffff;
+  cursor: default;
 }
 
 footer .footer_content ul li:hover a {
-  color: #222B3A;
+  padding-left: 5px;
 }
 
 footer .footer_content a {
@@ -534,6 +541,8 @@ footer .footer_content a {
   text-decoration: none;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold';
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 @media (max-width: 900px) {
